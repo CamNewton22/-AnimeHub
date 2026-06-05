@@ -2,43 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Anime Hub - Contact Us</title>
+  <title>Anime Hub - Home</title>
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    h1 {
+      text-align: center;
+    }
+  </style>
 </head>
+
 <body>
-  <header>
-    <nav>
-      <h2>Anime Hub</h2>
-      <a href="index.html">Home</a>
-      <a href="reviews.html">Reviews</a>
-      <a href="recommendations.html">Recommendations</a>
-      <a href="news.html">News</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
-  </header>
+  <div class="container">
+    <header>
+      <nav>
+        <h2>Anime Hub</h2>
+        <a href="index.html">Home</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="recommendations.html">Recommendations</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </header>
 
-  <main class="page">
-    <h1>Contact Us</h1>
-    <p class="subtitle">Have questions or want to share your favorite anime? Send us a message below.</p>
+    <main class="home">
+      <h1 style="color: #b13cff;">Anime Hub</h1>
 
-    <section class="contact-container">
-      <form class="contact-form">
-        <label>
-          Name
-          <input type="text" name="name" placeholder="Your name">
-        </label>
-        <label>
-          Email
-          <input type="email" name="email" placeholder="you@example.com">
-        </label>
-        <label>
-          Message
-          <textarea name="message" placeholder="Tell us what you think"></textarea>
-        </label>
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-  </main>
+      <p class="intro">
+        Welcome! Your source for anime, reviews, recommendations, and news.
+      </p>
+      <section class="anime-row">
+        <div class="anime-card">
+          <img src="images/Naruto.jpg" alt="Naruto">
+          <p>Naruto</p>
+        </div>
+
+        <div class="anime-card">
+          <img src="images/Attack%20on%20Titan.jpg" alt="Attack on Titan">
+          <p>Attack on Titan</p>
+        </div>
+
+        <div class="anime-card">
+          <img src="images/Demon%20Slayer%20Home.jpg" alt="Demon Slayer">
+          <p>Demon Slayer</p>
+        </div>
+
+        <div class="anime-card">
+          <img src="images/One%20Piece.png" alt="One Piece">
+          <p>One Piece</p>
+        </div>
+      </section>
+    </main>
+  </div>
   <footer>© 2026 Anime Hub</footer>
 </body>
 </html>
