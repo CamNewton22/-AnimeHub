@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anime Hub - Home</title>
   <link rel="stylesheet" href="style.css">
+  <script src="menu.js" defer></script>
 
   <style>
     h1 {
@@ -15,13 +17,20 @@
 <body>
   <div class="container">
     <header>
-      <nav>
-        <h2>Anime Hub</h2>
-        <a href="index.html">Home</a>
-        <a href="reviews.html">Reviews</a>
-        <a href="recommendations.html">Recommendations</a>
-        <a href="news.html">News</a>
-        <a href="contact.html">Contact Us</a>
+      <nav class="site-nav">
+        <div class="nav-brand">
+          <h2><a href="index.html">Anime Hub</a></h2>
+          <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation menu">
+            ☰
+          </button>
+        </div>
+        <div id="nav-links" class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="recommendations.html">Recommendations</a>
+          <a href="news.html">News</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
       </nav>
     </header>
 
@@ -33,22 +42,22 @@
       </p>
       <section class="anime-row">
         <div class="anime-card">
-          <img src="Naruto.jpg" alt="Naruto">
+          <img src="images/Naruto.jpg" alt="Naruto">
           <p>Naruto</p>
         </div>
 
         <div class="anime-card">
-          <img src="Attack-on-Titan.jpg" alt="Attack on Titan">
+          <img src="images/Attack-on-Titan.jpg" alt="Attack on Titan">
           <p>Attack on Titan</p>
         </div>
 
         <div class="anime-card">
-          <img src="Demon-Slayer-Home.jpg" alt="Demon Slayer">
+          <img src="images/Demon-Slayer-Home.jpg" alt="Demon Slayer">
           <p>Demon Slayer</p>
         </div>
 
         <div class="anime-card">
-          <img src="One-Piece.png" alt="One Piece">
+          <img src="images/One-Piece.png" alt="One Piece">
           <p>One Piece</p>
         </div>
       </section>
