@@ -6,6 +6,39 @@
   <title>Anime World Hub - Recommendations</title>
   <link rel="stylesheet" href="style.css">
   <script src="menu.js" defer></script>
+
+  <style>
+    #search {
+      padding: 10px;
+      width: 250px;
+      margin: 20px 0;
+      border-radius: 5px;
+    }
+
+    .recommendation-card {
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .recommendation-card:hover {
+      transform: scale(1.05);
+    }
+
+    .random-btn {
+      padding: 10px;
+      margin: 10px;
+      background-color: #00ccff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .fav-btn {
+      margin-top: 5px;
+      padding: 5px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 
 <body>
@@ -30,26 +63,86 @@
   <main class="page">
     <h1>Recommended Anime</h1>
 
+    <!-- SEARCH -->
+    <input type="text" id="search" placeholder="Search anime..." onkeyup="filterAnime()">
+
+    <!-- RANDOM BUTTON -->
+    <br>
+    <button class="random-btn" onclick="randomAnime()">🎲 Recommend Me Something!</button>
+
     <section class="recommendation-grid">
-      <article class="recommendation-card">
-        <h2><a href="naruto.html">Naruto</a></h2>
+
+      <article class="recommendation-card" onclick="goToPage('naruto.html')">
+        <h2>Naruto</h2>
         <img src="images/Naruto.jpg" alt="Naruto">
         <p>"A ninja anime full of action and friendship."</p>
+        <button class="fav-btn" onclick="event.stopPropagation(); addFavorite('Naruto')">❤️ Favorite</button>
       </article>
 
-      <article class="recommendation-card">
-        <h2><a href="onepiece.html">One Piece</a></h2>
+      <article class="recommendation-card" onclick="goToPage('onepiece.html')">
+        <h2>One Piece</h2>
         <img src="images/One-Piece.png" alt="One Piece">
         <p>"A pirate adventure searching for treasure."</p>
+        <button class="fav-btn" onclick="event.stopPropagation(); addFavorite('One Piece')">❤️ Favorite</button>
       </article>
 
-      <article class="recommendation-card">
-        <h2><a href="demonslayer.html">Demon Slayer</a></h2>
+      <article class="recommendation-card" onclick="goToPage('demonslayer.html')">
+        <h2>Demon Slayer</h2>
         <img src="images/Demon-Slayer-Home.jpg" alt="Demon Slayer">
         <p>“A swordsman fights demons to save his sister.”</p>
+        <button class="fav-btn" onclick="event.stopPropagation(); addFavorite('Demon Slayer')">❤️ Favorite</button>
       </article>
+
     </section>
+
+    <!-- RATING -->
+    <h2>Rate This Page</h2>
+    <button onclick="rate(1)">⭐</button>
+    <button onclick="rate(2)">⭐⭐</button>
+    <button onclick="rate(3)">⭐⭐⭐</button>
+    <button onclick="rate(4)">⭐⭐⭐⭐</button>
+    <button onclick="rate(5)">⭐⭐⭐⭐⭐</button>
+
+    <p id="ratingResult"></p>
+
+    <!-- FAVORITES -->
+    <h2>Your Favorites ❤️</h2>
+    <p id="favorites"></p>
+
   </main>
+
   <footer>© 2026 Anime Hub</footer>
+
+  <script>
+    function goToPage(page) {
+      window.location.href = page;
+    }
+
+    function filterAnime() {
+      let input = document.getElementById("search").value.toLowerCase();
+      let cards = document.querySelectorAll(".recommendation-card");
+
+      cards.forEach(card => {
+        let text = card.innerText.toLowerCase();
+        card.style.display = text.includes(input) ? "block" : "none";
+      });
+    }
+
+    function randomAnime() {
+      let anime = ["naruto.html", "onepiece.html", "demonslayer.html"];
+      let pick = anime[Math.floor(Math.random() * anime.length)];
+      window.location.href = pick;
+    }
+
+    function rate(num) {
+      document.getElementById("ratingResult").innerText =
+        "You rated this " + num + " stars!";
+    }
+
+    function addFavorite(name) {
+      document.getElementById("favorites").innerHTML += name + "<br>";
+    }
+  </script>
+
 </body>
 </html>
