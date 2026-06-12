@@ -26,7 +26,7 @@
 
     .random-btn {
       padding: 10px;
-      margin: 10px 0;
+      margin: 10px;
       background-color: #00ccff;
       border: none;
       border-radius: 5px;
@@ -50,7 +50,6 @@
           ☰
         </button>
       </div>
-
       <div id="nav-links" class="nav-links">
         <a href="index.html">Home</a>
         <a href="reviews.html">Reviews</a>
@@ -68,28 +67,29 @@
     <input type="text" id="search" placeholder="Search anime..." onkeyup="filterAnime()">
 
     <!-- RANDOM BUTTON -->
+    <br>
     <button class="random-btn" onclick="randomAnime()">🎲 Recommend Me Something!</button>
 
     <section class="recommendation-grid">
 
       <article class="recommendation-card" onclick="goToPage('naruto.html')">
         <h2>Naruto</h2>
-        <img src="images/naruto.jpg" alt="Naruto">
+        <img src="images/Naruto.jpg" alt="Naruto">
         <p>"A ninja anime full of action and friendship."</p>
         <button class="fav-btn" onclick="event.stopPropagation(); addFavorite('Naruto')">❤️ Favorite</button>
       </article>
 
       <article class="recommendation-card" onclick="goToPage('onepiece.html')">
         <h2>One Piece</h2>
-        <img src="images/onepiece.png" alt="One Piece">
+        <img src="images/OnePiece.png" alt="One Piece">
         <p>"A pirate adventure searching for treasure."</p>
         <button class="fav-btn" onclick="event.stopPropagation(); addFavorite('One Piece')">❤️ Favorite</button>
       </article>
 
       <article class="recommendation-card" onclick="goToPage('demonslayer.html')">
         <h2>Demon Slayer</h2>
-        <img src="images/demonslayerhome.jpg" alt="Demon Slayer">
-        <p>"A swordsman fights demons to save his sister."</p>
+        <img src="images/DemonSlayerHome.jpg" alt="Demon Slayer">
+        <p>“A swordsman fights demons to save his sister.”</p>
         <button class="fav-btn" onclick="event.stopPropagation(); addFavorite('Demon Slayer')">❤️ Favorite</button>
       </article>
 

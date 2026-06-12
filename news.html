@@ -8,7 +8,6 @@
   <script src="menu.js" defer></script>
   <script src="news.js" defer></script>
 </head>
-
 <body>
   <header>
     <nav class="site-nav">
@@ -18,7 +17,6 @@
           ☰
         </button>
       </div>
-
       <div id="nav-links" class="nav-links">
         <a href="index.html">Home</a>
         <a href="reviews.html">Reviews</a>
@@ -32,9 +30,7 @@
   <main class="page">
     <div class="news-header">
       <h1>Anime News</h1>
-      <p class="subtitle">
-        Stay ahead of the story with the latest anime announcements, season updates, and exclusive event coverage.
-      </p>
+      <p class="subtitle">Stay ahead of the story with the latest anime announcements, season updates, and exclusive event coverage.</p>
     </div>
 
     <div class="news-filters" aria-label="News filters">
@@ -44,25 +40,60 @@
       <button class="filter-btn" data-filter="event-exclusive">Events</button>
     </div>
 
-    <!-- Featured Story -->
     <section class="news-hero">
       <aside class="hero-card">
-        <img src="images/naruto.jpg" alt="Naruto news">
+        <img src="images/Naruto.jpg" alt="Naruto news">
         <div class="hero-card-copy">
           <p class="eyebrow">Featured Story</p>
           <h2>Naruto movie teaser drops today</h2>
-          <p>
-            Get the first look at the newest Naruto film with a brand new battle sequence and returning favorites.
-          </p>
+          <p>Get the first look at the newest Naruto film with a brand new battle sequence and returning favorites.</p>
         </div>
       </aside>
     </section>
 
-    <!-- News Grid -->
     <section class="news-grid">
-
-      <!-- Demon Slayer -->
       <article class="news-card" data-category="season-update">
-        <img src="images/demonslayerhome.jpg" alt="Demon Slayer news">
+        <img src="images/DemonSlayerHome.jpg" alt="Demon Slayer news">
         <div class="news-card-content">
           <span class="news-meta">Season update</span>
+          <h2>Demon Slayer teaser trailer</h2>
+          <p>The latest teaser reveals the next arc and introduces a powerful new demon enemy.</p>
+          <button class="toggle-details" aria-expanded="false">Read more</button>
+          <div class="news-details hidden">
+            <p>Fans can expect new characters, updated animation, and more fight choreography in the upcoming season.</p>
+          </div>
+          <button class="like-btn">Like <span class="like-count">0</span></button>
+        </div>
+      </article>
+
+      <article class="news-card" data-category="series-finale">
+        <img src="images/AttackonTitanNews.jpeg" alt="Attack on Titan news">
+        <div class="news-card-content">
+          <span class="news-meta">Series finale</span>
+          <h2>Attack on Titan finale confirmed</h2>
+          <p>The long-awaited ending is scheduled for next spring, closing with an epic final confrontation.</p>
+          <button class="toggle-details" aria-expanded="false">Read more</button>
+          <div class="news-details hidden">
+            <p>The finale will bring closure to the story and answer lingering questions about the Titans and the walls.</p>
+          </div>
+          <button class="like-btn">Like <span class="like-count">0</span></button>
+        </div>
+      </article>
+
+      <article class="news-card" data-category="event-exclusive">
+        <div class="news-card-content no-image">
+          <span class="news-meta">Event exclusive</span>
+          <h2>Convention livestream announced</h2>
+          <p>Catch exclusive voice actor panels and anime previews from the biggest summer convention online.</p>
+          <button class="toggle-details" aria-expanded="false">Read more</button>
+          <div class="news-details hidden">
+            <p>The livestream will include exclusive trailers, giveaways, and a Q&A with top anime creators.</p>
+          </div>
+          <button class="like-btn">Like <span class="like-count">0</span></button>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer>© 2026 Anime Hub</footer>
+</body>
+</html>
