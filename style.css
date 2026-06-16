@@ -922,3 +922,8 @@ footer {
   .twitter { background-color: #000; }
   .linkedin { background-color: #0077b5; }
   
+section.explore-anime ul li a {
+  display: inline-block;
+  padding: 8px 0; /* Increases the clickable height */
+  margin-bottom: 4px; /* Adds space between neighboring links */
+}
