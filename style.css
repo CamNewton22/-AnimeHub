@@ -29,6 +29,10 @@
     pointer-events: auto;
   }
 
+  .site-nav {
+   position: relative;
+}
+
   .nav-links a {
     padding: 10px;
     width: 100%;
