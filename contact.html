@@ -1,38 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Hub - Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="menu.js" defer></script>
 </head>
-
 <body>
+  <header>
+    <nav class="site-nav">
+      <div class="nav-brand">
+        <h2><a href="index.html">Anime Hub</a></h2>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation menu">
+          ☰
+        </button>
+      </div>
+      <div id="nav-links" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="recommendations.html">Recommendations</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </nav>
+  </header>
 
-<nav>
-<h2>Anime Hub</h2>
-<div class="nav-links">
-<a href="index.html">Home</a>
-<a href="reviews.html">Reviews</a>
-<a href="recommendations.html">Recommendations</a>
-<a href="news.html">News</a>
-<a href="contact.html">Contact</a>
-</div>
-</nav>
+  <main class="page">
+    <h1>Contact Us</h1>
+    <p class="subtitle">Have questions or want to share your favorite anime? Send us a message below.</p>
 
-<main class="page">
-
-<h1>Contact Us</h1>
-
-<form>
-<input type="text" placeholder="First Name">
-<input type="text" placeholder="Last Name">
-<input type="email" placeholder="Email">
-<input type="text" placeholder="Subject">
-<textarea placeholder="Message"></textarea>
-<button>Send</button>
-</form>
-
-</main>
-
-<footer>© 2026 Anime Hub</footer>
-
+    <section class="contact-container">
+      <form class="contact-form">
+        <label>
+          First Name
+          <input type="text" firstname="name" placeholder="Your first name">
+          Last Name
+          <input type="text" lastname="name" placeholder="Your last name">
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@example.com">
+        </label>
+        <label>
+          Subject
+          <input type="text" name="subject" placeholder="Subject of your message">
+          <textarea name="subject" placeholder="Tell us what you think"></textarea>
+        </label>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+  <footer>© 2026 Anime Hub</footer>
 </body>
 </html>
