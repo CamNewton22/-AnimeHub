@@ -125,6 +125,9 @@ nav a.active {
 .anime-card {
   text-align: center;
   width: min(220px, 45%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .anime-card img {
