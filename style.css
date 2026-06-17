@@ -14,10 +14,31 @@ body {
   min-height: 100vh;
 }
     {
-  background-color: #1a0933; /* same dark purple as your reviews page */
+ body {
+  background-color: #1a0933;
   color: white;
   margin: 0;
   font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.site-nav {
+  background-color: #1a0933;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  padding: 20px;
+}
+``
 }
 img {
   max-width: 100%;
