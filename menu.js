@@ -1,7 +1,7 @@
-document.querySelector(".nav-toggle").addEventListener("click", () => {
-  document.querySelector(".nav-links").classList.toggle("open");
-});
-``
+document.addEventListener('DOMContentLoaded', function () {
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
   if (!navToggle || !navLinks) {
     return;
   }
@@ -21,5 +21,8 @@ document.querySelector(".nav-toggle").addEventListener("click", () => {
         navToggle.setAttribute('aria-expanded', 'false');
       }
     });
+  });
+});
+
   });
 });
