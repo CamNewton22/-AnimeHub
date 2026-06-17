@@ -6,91 +6,76 @@
   <title>Anime Hub - Home</title>
   <link rel="stylesheet" href="style.css">
   <script src="menu.js" defer></script>
- 
+  <script src="SocialShare.js"></script>
 </head>
-<script src="SocialShare.js"></script>
+
 <body>
+
+  <!-- SOCIAL BAR -->
   <div class="share-bar">
-  <button class="share-btn facebook" onclick="shareFacebook()">Facebook</button>
-  <button class="share-btn twitter" onclick="shareTwitter()">X</button>
-  <button class="share-btn linkedin" onclick="shareLinkedIn()">LinkedIn</button>
-</div>
-  <div class="container">
-    <header>
-     <nav class="site-nav">
-  <div class="nav-brand">
-    <h2><a href="index.html">Anime Hub</a></h2>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation menu">
-      ☰
-    </button>
+    <button class="share-btn facebook" onclick="shareFacebook()">Facebook</button>
+    <button class="share-btn twitter" onclick="shareTwitter()">X</button>
+    <button class="share-btn linkedin" onclick="shareLinkedIn()">LinkedIn</button>
   </div>
 
-  <div id="nav-links" class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="reviews.html">Reviews</a>
-    <a href="recommendations.html">Recommendations</a>
-    <a href="news.html">News</a>
-    <a href="contact.html">Contact Us</a>
-  </div>
-</nav>
-    </header>
+  <!-- NAV -->
+  <header>
+    <nav class="site-nav">
+      <div class="nav-brand">
+        <h2><a href="index.html">Anime Hub</a></h2>
+        <button class="nav-toggle">☰</button>
+      </div>
 
-    
-<main class="page">
-  <section class="home">
+      <div id="nav-links" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="recommendations.html">Recommendations</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </nav>
+  </header>
 
+  <!-- MAIN -->
+  <main class="page">
+
+    <!-- HERO -->
+    <section class="home">
       <h1>Anime Hub</h1>
 
-      <!-- ✅ NEW BANNER IMAGE -->
-      <img src="AttackonTitan.jpg" class="banner" width="384" height="216" alt="Attack on Titan Banner">
-  </section> 
-</main>
-    <p>
-  Ready to start your anime journey?
-</p>
-
-<a href="https://www.allaboutanime.in/blog/how-to-start-watching-anime-beginner-s-step-by-step-guide-8426" 
-   target="_blank" 
-   class="start-btn">
-   ▶ Start Watching Anime
-</a>
+      <img src="AttackonTitan.jpg" class="banner" alt="Banner">
 
       <p class="intro">
         Welcome! Your source for anime, reviews, recommendations, and news.
       </p>
-<section class="about-anime">
-  <h2>What is Anime?</h2>
-  <p>
-    Anime is a style of animation that originated in Japan and has become popular all over the world.
-    It began developing in the 1960s and has since grown into a global form of entertainment enjoyed
-    by people of all ages. Anime is known for its unique art style, colorful characters, and its
-    ability to tell a wide variety of stories across many genres. 
-    <br><br>
-    Source: 
-    <a href="https://animeinjapan.com/2023/09/everything-you-need-to-know-about-japanese-anime/" target="_blank">
-      Anime in Japan
-    </a>
-  </p>
 
-  <h2>What Anime Means to Fans</h2>
-  <p>
-    For many fans, anime is more than just entertainment—it is a way to connect with characters,
-    stories, and cultures. Anime explores deep themes, emotions, and life experiences in ways that
-    feel meaningful and relatable. Fans often build strong communities around anime by sharing their
-    favorite shows, attending conventions, and expressing creativity through art, cosplay, and discussions.
-  </p>
+      <a href="https://www.allaboutanime.in/blog/how-to-start-watching-anime-beginner-s-step-by-step-guide-8426"
+         target="_blank"
+         class="start-btn">
+         ▶ Start Watching Anime
+      </a>
+    </section>
 
-  <h2>How Anime Impacts Fans</h2>
-  <p>
-    Anime has a powerful impact on its audience. It inspires creativity, influences fashion, music,
-    and art, and encourages people to explore new ideas and cultures. Anime can also create emotional
-    connections through storytelling, allowing viewers to experience excitement, joy, sadness, and
-    personal growth. Its global reach has brought people together from different backgrounds,
-    showing that anime is not just for kids, but for anyone who enjoys meaningful storytelling.
-  </p>
-</section>
-      <!-- ✅ ANIME CARDS -->
-      <section class="anime-row">
+    <!-- ABOUT (cleaned + shorter blocks) -->
+    <section class="about-anime">
+      <h2>What is Anime?</h2>
+      <p>
+        Anime is a style of animation from Japan known for its unique art and storytelling.
+        It has grown into a global entertainment medium enjoyed by all ages across many genres.
+      </p>
+
+      <h2>Why Fans Love Anime</h2>
+      <p>
+        Anime connects viewers with powerful characters, emotional stories, and creative worlds.
+        It also builds communities through shared interests, art, and discussions.
+      </p>
+    </section>
+
+    <!-- FEATURED ROW -->
+    <section>
+      <h2>Popular Anime</h2>
+
+      <div class="anime-row">
         <div class="anime-card">
           <img src="Naruto.jpg" alt="Naruto">
           <p>Naruto</p>
@@ -110,24 +95,29 @@
           <img src="OnePiece.png" alt="One Piece">
           <p>One Piece</p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- ✅ These are explore links -->
-      <section class="explore-anime">
-        <h2>Explore Anime</h2>
-       <p class="explore-text">
-  🎬 Click a title to watch trailers, preview episodes, and explore each anime!
-       </p>
-        <ul>
-          <li><a href="naruto.html">Naruto</a></li>
-          <li><a href="aot.html">Attack on Titan</a></li>
-          <li><a href="onepiece.html">One Piece</a></li>
-          <li><a href="demonslayer.html">Demon Slayer</a></li>
-        </ul>
-      </section>
-    </main>
-  </div>
+    <!-- EXPLORE -->
+    <section class="explore-anime">
+      <h2>Explore Anime</h2>
+
+      <p class="explore-text">
+        🎬 Click a title to watch trailers and explore each anime!
+      </p>
+
+      <ul class="clean-list">
+        <li><a href="naruto.html">Naruto</a></li>
+        <li><a href="aot.html">Attack on Titan</a></li>
+        <li><a href="onepiece.html">One Piece</a></li>
+        <li><a href="demonslayer.html">Demon Slayer</a></li>
+      </ul>
+    </section>
+
+  </main>
 
   <footer>© 2026 Anime Hub</footer>
+
 </body>
 </html>
+
