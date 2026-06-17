@@ -1,50 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Anime Hub</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Hub - Home</title>
   <link rel="stylesheet" href="style.css">
   <script src="menu.js" defer></script>
+
+  <style>
+    h1 {
+      text-align: center;
+    }
+  </style>
 </head>
-
+<script src="SocialShare.js"></script>
 <body>
+  <div class="share-bar">
+  <button class="share-btn facebook" onclick="shareFacebook()">Facebook</button>
+  <button class="share-btn twitter" onclick="shareTwitter()">X</button>
+  <button class="share-btn linkedin" onclick="shareLinkedIn()">LinkedIn</button>
+</div>
+  <div class="container">
+    <header>
+      <nav class="site-nav">
+        <div class="nav-brand">
+          <h2><a href="index.html">Anime Hub</a></h2>
+          <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation menu">
+            ☰
+          </button>
+        </div>
+        <div id="nav-links" class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="recommendations.html">Recommendations</a>
+          <a href="news.html">News</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </nav>
+    </header>
 
-<nav>
-  <h2>Anime Hub</h2>
-  <div class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="reviews.html">Reviews</a>
-    <a href="recommendations.html">Recommendations</a>
-    <a href="news.html">News</a>
-    <a href="contact.html">Contact</a>
+    <main class="home">
+      <h1 style="color: #b13cff;">Anime Hub</h1>
+
+      <!-- ✅ NEW BANNER IMAGE -->
+      <img src="images/AttackonTitan.jpg alt="Attack on Titan Banner" class="banner">
+
+      <p class="intro">
+        Welcome! Your source for anime, reviews, recommendations, and news.
+      </p>
+
+      <!-- ✅ ANIME CARDS -->
+      <section class="anime-row">
+        <div class="anime-card">
+          <img src="images/naruto.jpg" alt="Naruto">
+          <p>Naruto</p>
+        </div>
+
+        <div class="anime-card">
+          <img src="images/AttackonTitan.jpg" alt="Attack on Titan">
+          <p>Attack on Titan</p>
+        </div>
+
+        <div class="anime-card">
+          <img src="images/demonslayerhome.jpg" alt="Demon Slayer">
+          <p>Demon Slayer</p>
+        </div>
+
+        <div class="anime-card">
+          <img src="images/onepiece.png" alt="One Piece">
+          <p>One Piece</p>
+        </div>
+      </section>
+
+      <!-- ✅ EXPLORE LINKS -->
+      <section class="explore-anime">
+        <h2>Explore Anime</h2>
+        <ul>
+          <li><a href="naruto.html">Naruto</a></li>
+          <li><a href="aot.html">Attack on Titan</a></li>
+          <li><a href="onepiece.html">One Piece</a></li>
+          <li><a href="demonslayer.html">Demon Slayer</a></li>
+        </ul>
+      </section>
+    </main>
   </div>
-</nav>
 
-<main class="page">
-
-<h1>Anime Hub</h1>
-
-<img src="AttackonTitan.jpg" class="banner">
-
-<a href="#" class="start-btn">Start Watching</a>
-
-<h2>Popular Anime</h2>
-<div class="grid">
-<div class="card"><img src="Naruto.jpg"><p>Naruto</p></div>
-<div class="card"><img src="OnePiece.png"><p>One Piece</p></div>
-<div class="card"><img src="DemonSlayerHome.jpg"><p>Demon Slayer</p></div>
-</div>
-
-<h2>🔥 Trending</h2>
-<div class="scroll-row">
-<div class="card"><img src="Naruto.jpg"><p>Naruto</p></div>
-<div class="card"><img src="OnePiece.png"><p>One Piece</p></div>
-<div class="card"><img src="DemonSlayerHome.jpg"><p>Demon Slayer</p></div>
-</div>
-
-</main>
-
-<footer>© 2026 Anime Hub</footer>
-
+  <footer>© 2026 Anime Hub</footer>
 </body>
 </html>
-
