@@ -16,14 +16,6 @@ body {
   min-height: 100vh;
 }
 
-/* LAYOUT */
-.container {
-  width: min(92%, 1100px);
-  margin: 20px auto;
-  background-color: #24134f;
-  padding-bottom: 60px;
-}
-
 /* NAVBAR */
 nav {
   background-color: #1a102b;
