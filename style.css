@@ -22,7 +22,6 @@ img {
 .container {
   width: min(92%, 900px);
   margin: 20px auto;
-  background-color: #24134f;
   padding-bottom: 60px;
 }
 
