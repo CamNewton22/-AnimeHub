@@ -67,12 +67,33 @@ nav {
   outline: none;
 }
 
+/* Base hidden menu */
 .nav-links {
+  position: absolute;
+  top: 70px; /* just below header */
+  right: 0;
+  background-color: #1a0933;
+  width: 200px;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 20px;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+
+  transform: translateY(-150%);
+  opacity: 0;
+  pointer-events: none;
+
+  transition: transform 0.4s ease, opacity 0.3s ease;
+  border-radius: 10px;
 }
+
+/* Show menu when active */
+.nav-links.active {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
 
 nav h2 {
   margin-right: auto;
