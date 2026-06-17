@@ -85,7 +85,10 @@ nav {
   opacity: 1;
   pointer-events: auto;
 }
-
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
 
 nav h2 {
   margin-right: auto;
@@ -663,7 +666,29 @@ footer {
   color: #c8c8d4;
   font-size: 14px;
 }
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    flex-direction: column;
+    background-color: #1a0933;
+    width: 200px;
+    padding: 15px;
 
+    transform: translateY(-150%);
+    opacity: 0;
+    pointer-events: none;
+
+    transition: transform 0.4s ease, opacity 0.3s ease;
+  }
+
+  .nav-links.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
 @media (max-width: 900px) {
   .container {
     width: 95%;
