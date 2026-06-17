@@ -6,16 +6,90 @@
   <title>Anime Hub - Contact Us</title>
   <link rel="stylesheet" href="style.css">
   <script src="menu.js" defer></script>
+
+  <style>
+    .subtitle {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #ddd;
+    }
+
+    .contact-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .contact-form {
+      background: #2a2568;
+      padding: 30px;
+      border-radius: 20px;
+      width: 100%;
+      max-width: 500px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 15px;
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      border-radius: 10px;
+      border: none;
+      background: #3a357a;
+      color: white;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .contact-form textarea {
+      height: 120px;
+      resize: none;
+    }
+
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+      color: #aaa;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      box-shadow: 0 0 8px #b13cff;
+    }
+
+    .contact-form button {
+      margin-top: 15px;
+      padding: 12px;
+      width: 150px;
+      background: linear-gradient(90deg, #b13cff, #5cd4ff);
+      border: none;
+      border-radius: 25px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .contact-form button:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
+
 <body>
   <header>
     <nav class="site-nav">
       <div class="nav-brand">
         <h2><a href="index.html">Anime Hub</a></h2>
-        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation menu">
-          ☰
-        </button>
+        <button class="nav-toggle">☰</button>
       </div>
+
       <div id="nav-links" class="nav-links">
         <a href="index.html">Home</a>
         <a href="reviews.html">Reviews</a>
@@ -27,30 +101,46 @@
   </header>
 
   <main class="page">
-    <h1>Contact Us</h1>
-    <p class="subtitle">Have questions or want to share your favorite anime? Send us a message below.</p>
+    <h1 style="color:#d453ff;">Contact Us</h1>
+
+    <p class="subtitle">
+      Have questions or want to share your favorite anime? Send us a message below.
+    </p>
 
     <section class="contact-container">
       <form class="contact-form">
+
         <label>
           First Name
-          <input type="text" firstname="name" placeholder="Your first name">
-          Last Name
-          <input type="text" lastname="name" placeholder="Your last name">
+          <input type="text" name="firstname" placeholder="Your first name">
         </label>
+
+        <label>
+          Last Name
+          <input type="text" name="lastname" placeholder="Your last name">
+        </label>
+
         <label>
           Email
           <input type="email" name="email" placeholder="you@example.com">
         </label>
+
         <label>
           Subject
           <input type="text" name="subject" placeholder="Subject of your message">
-          <textarea name="subject" placeholder="Tell us what you think"></textarea>
         </label>
+
+        <label>
+          Message
+          <textarea name="message" placeholder="Tell us what you think"></textarea>
+        </label>
+
         <button type="submit">Send Message</button>
+
       </form>
     </section>
   </main>
+
   <footer>© 2026 Anime Hub</footer>
 </body>
 </html>
