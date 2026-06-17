@@ -1,151 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anime World Hub - Recommendations</title>
-  <link rel="stylesheet" href="style.css>
-    #search {
-      padding: 10px;
-      width: 250px;
-      margin: 20px 0;
-      border-radius: 5px;
-    }
-
-    .recommendation-card {
-      transition: transform 0.3s;
-      cursor: pointer;
-    }
-
-    .recommendation-card:hover {
-      transform: scale(1.05);
-    }
-
-    /* ✅ FIXED (added missing }) */
-    .random-btn {
-      padding: 10px;
-      margin: 10px;
-      background-color: #00ccff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .fav-btn {
-      margin-top: 5px;
-      padding: 5px;
-      cursor: pointer;
-    }
-  </style>
+  <title>Recommendations</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
-    <nav class="site-nav">
-      <div class="nav-brand">
-        <h2><a href="index.html">Anime Hub</a></h2>
-        <button class="nav-toggle">☰</button>
-      </div>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="reviews.html">Reviews</a>
-        <a class="active" href="recommendations.html">Recommendations</a>
-        <a href="news.html">News</a>
-        <a href="contact.html">Contact Us</a>
-      </div>
-    </nav>
-  </header>
 
-  <main class="page">
-    <h1>Recommended Anime</h1>
+<nav>
+  <h2>Anime Hub</h2>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="recommendations.html">Recommendations</a>
+    <a href="news.html">News</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
 
-    <p>
-      You can find recommendations here for updated and seasonal anime for anime fans. 
-      This is on the <strong>recommendations.html</strong> page.
-    </p>
+<main class="page">
 
-    <input type="text" id="search" placeholder="Search anime..." onkeyup="filterAnime()">
+<h1>Recommendations</h1>
 
-    <br>
-    <button class="random-btn" onclick="randomAnime()">🎲 Recommend Me Something!</button>
+<button onclick="randomAnime()">🎲 Recommend Me</button>
 
-    <section class="recommendation-grid">
+<div class="grid">
+<div class="card" onclick="go('naruto.html')"><img src="Naruto.jpg"><p>Naruto</p></div>
+<div class="card" onclick="go('onepiece.html')"><img src="OnePiece.png"><p>One Piece</p></div>
+<div class="card" onclick="go('demonslayer.html')"><img src="DemonSlayerHome.jpg"><p>Demon Slayer</p></div>
+</div>
 
-      <article class="recommendation-card" onclick="goToPage('naruto.html')">
-        <h2>Naruto</h2>
-        <img src="Naruto.jpg" alt="Naruto">
-        <p>"A ninja anime full of action and friendship."</p>
-        <button class="fav-btn" onclick="event.stopPropagation(); addFavorite('Naruto')">
-          ❤️ Favorite
-        </button>
-      </article>
+</main>
 
-      <article class="recommendation-card" onclick="goToPage('onepiece.html')">
-        <h2>One Piece</h2>
-        <img src="OnePiece.png" alt="One Piece">
-        <p>"A pirate adventure searching for treasure."</p>
-        <button class="fav-btn" onclick="event.stopPropagation(); addFavorite('One Piece')">
-          ❤️ Favorite
-        </button>
-      </article>
+<script>
+function go(p){window.location=p;}
+function randomAnime(){
+let list=["naruto.html","onepiece.html","demonslayer.html"];
+window.location=list[Math.floor(Math.random()*list.length)];
+}
+</script>
 
-      <article class="recommendation-card" onclick="goToPage('demonslayer.html')">
-        <h2>Demon Slayer</h2>
-        <img src="DemonSlayerHome.jpg" alt="Demon Slayer">
-        <p>“A swordsman fights demons to save his sister.”</p>
-        <button class="fav-btn" onclick="event.stopPropagation(); addFavorite('Demon Slayer')">
-          ❤️ Favorite
-        </button>
-      </article>
-
-    </section>
-
-    <h2>Rate This Page</h2>
-    <button onclick="rate(1)">⭐</button>
-    <button onclick="rate(2)">⭐⭐</button>
-    <button onclick="rate(3)">⭐⭐⭐</button>
-    <button onclick="rate(4)">⭐⭐⭐⭐</button>
-    <button onclick="rate(5)">⭐⭐⭐⭐⭐</button>
-
-    <p id="ratingResult"></p>
-
-    <h2>Your Favorites ❤️</h2>
-    <p id="favorites"></p>
-  </main>
-
-  <footer>© 2026 Anime Hub</footer>
-
-  <script>
-    function goToPage(page) {
-      window.location.href = page;
-    }
-
-    function filterAnime() {
-      let input = document.getElementById("search").value.toLowerCase();
-      let cards = document.querySelectorAll(".recommendation-card");
-
-      cards.forEach(card => {
-        let text = card.innerText.toLowerCase();
-        card.style.display = text.includes(input) ? "block" : "none";
-      });
-    }
-
-    function randomAnime() {
-      let anime = ["naruto.html", "onepiece.html", "demonslayer.html"];
-      let pick = anime[Math.floor(Math.random() * anime.length)];
-      window.location.href = pick;
-    }
-
-    function rate(num) {
-      document.getElementById("ratingResult").innerText =
-        "You rated this " + num + " stars!";
-    }
-
-    function addFavorite(name) {
-      document.getElementById("favorites").innerHTML += name + "<br>";
-    }
-  </script>
+<footer>© 2026 Anime Hub</footer>
 
 </body>
 </html>
-
