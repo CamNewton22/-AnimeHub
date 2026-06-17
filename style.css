@@ -945,3 +945,8 @@ section.explore-anime ul li a {
   background-color: #8e2ed6;
   transform: scale(1.05);
 }
+.explore-text {
+  font-size: 14px;
+  color: #ddd;
+  margin-bottom: 12px;
+}
