@@ -1,7 +1,7 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
-
+<img class="review-image" src="animereview.jpg" alt="review image">
 html {
   scroll-behavior: smooth;
 }
@@ -71,7 +71,13 @@ nav {
   padding: 8px 12px;
   flex-wrap: wrap;
 }
-
+.review-image {
+  width: 100%;        /* ✅ stretches full width */
+  max-width: 1000px;  /* prevents it from getting too huge */
+  height: auto;
+  display: block;
+  margin: 0 auto;     /* ✅ keeps it centered */
+}
 .nav-brand {
   display: flex;
   align-items: center;
@@ -89,7 +95,11 @@ nav {
   font-weight: bold;
   text-decoration: none;
 }
-
+.review-card {
+  width: 100%;
+  text-align: center;
+}
+``
 .anime-info a:hover {
   text-decoration: underline;
 }
