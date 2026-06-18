@@ -81,11 +81,13 @@ nav {
   flex-wrap: wrap;
 }
 .review-image {
-  width: 100%;        /* ✅ stretches full width */
-  max-width: 1000px;  /* prevents it from getting too huge */
-  height: auto;
+  width: 80%;
+  max-width: 700px;
+  margin: 20px auto;
   display: block;
-  margin: 0 auto;     /* ✅ keeps it centered */
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
 }
 .nav-brand {
   display: flex;
