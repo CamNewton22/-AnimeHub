@@ -5,6 +5,15 @@
 html {
   scroll-behavior: smooth;
 }
+.review-image {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.review-image:hover {
+  transform: scale(1.05);
+}
+
 .banner-row {
   display: flex;
   justify-content: center;   /* ✅ centers images horizontally */
