@@ -227,6 +227,7 @@ a:hover {
 .page h1 {
   text-align: center;
   color: #9f34d1
+  font-size: 18px;
 }
 
 
@@ -417,7 +418,7 @@ a:hover {
   margin: 0 0 18px;
   color: #e0e7ff;
   line-height: 1.7;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .tags {
