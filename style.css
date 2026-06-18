@@ -147,85 +147,6 @@ nav a.active {
 }
 
 
-header {
-  padding: 10px 20px;
-}
-
-nav {
-  background-color: #1a102b;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 8px 12px;
-}
-
-nav h2 {
-  margin-right: auto;
-  font-size: 16px;
-  color: white;
-}
-
-nav a {
-  color: white;
-  font-size: 14px;
-  padding: 10px 12px;
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-  transition: border-color 0.2s ease, color 0.2s ease;
-}
-
-nav a:hover,
-nav a.active {
-  border-bottom-color: #ffffff;
-}
-
-.home {
-  padding: 20px;
-}
-
-.home h1 {
-  font-size: 48px;
-  margin-top: 25px;
-}
-
-.intro {
-  font-size: 22px;
-  line-height: 1.4;
-  margin: 40px 40px;
-  max-width: 600px;
-}
-
-.anime-row {
-  display: flex;
-  justify-content: center;
-  gap: 35px;
-  flex-wrap: wrap;
-  margin-top: 30px;
-}
-
-.anime-card {
-  text-align: center;
-  width: 200px;
-}
-
-.anime-card img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 16px;
-  border: 2px solid rgba(255,255,255,0.08);
-  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.35);
-  transition: transform 0.25s ease;
-}
-
-.anime-card img:hover {
-  transform: translateY(-4px);
-}
-
-.anime-card p {
-  font-size: 22px;
-  margin-top: 18px;
-}
 /* Featured Anime Section */
 
 .featured-anime {
@@ -807,8 +728,6 @@ footer {
   .news-filters {
     justify-content: stretch;
   }
-}
-
 
   .anime-card {
     width: 100%;
@@ -837,6 +756,7 @@ footer {
   .contact-form {
     padding: 20px;
   }
+}
 
 
 @media (max-width: 480px) {
@@ -865,59 +785,3 @@ footer {
     text-align: center;
   }
 }
-.share-bar {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  margin: 20px 0;
-}
-
-.share-btn {
-  border: none;
-  padding: 12px 18px;
-  color: white;
-  font-size: 14px;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: transform 0.2s, opacity 0.2s;
-}
-
-.share-btn:hover {
-  transform: scale(1.05);
-  opacity: 0.9;
-}
-
-/* Brand colors */
-.facebook {
-  background-color: #1877f2;
-}
-
-.twitter {
-  background-color: #000000;
-}
-
-.linkedin {
-  background-color: #0077b5;
-}
-  
-
-
-  .share-bar {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  margin: 20px 0;
-}
-
-.share-btn {
-  border: none;
-  padding: 12px 18px;
-  color: white;
-  border-radius: 25px;
-  cursor: pointer;
-}
-
-  .facebook { background-color: #1877f2; }
-  .twitter { background-color: #000; }
-  .linkedin { background-color: #0077b5; }
-  
