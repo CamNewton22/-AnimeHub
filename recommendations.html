@@ -62,6 +62,11 @@
     <h1 style="color: #b13cff;">Anime Recommendations</h1>
 
     <!-- RANDOM BUTTON -->
+        <!-- SEARCH -->
+    <input type="text" id="search" placeholder="Search anime..." onkeyup="filterAnime()"
+      onkeydown="searchEnter(event)"> 
+<button onclick="searchAnime()">🔍</button>
+``
     <br>
    <button class="random-btn" onclick="window.open('http://aniwaves.ru/', '_blank')">
       🎲 Recommend Me Something!
