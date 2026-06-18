@@ -63,7 +63,10 @@
 
     <!-- SEARCH -->
     <input type="text" id="search" placeholder="Search anime..." onkeyup="filterAnime()"
-      onkeydown="searchEnter(event)">
+      onkeydown="searchEnter(event)"> 
+<button onclick="searchAnime()">🔍</button>
+``
+
 
     <!-- RANDOM BUTTON -->
     <br>
@@ -172,6 +175,12 @@ function searchEnter(event) {
     window.open("https://myanimelist.net/anime.php?q=" + query, "_blank");
   }
   }
+        
+function searchAnime() {
+  let query = document.getElementById("search").value;
+  window.open("https://myanimelist.net/anime.php?q=" + query, "_blank");
+}
+
     </script>
 </body> 
 </html>
