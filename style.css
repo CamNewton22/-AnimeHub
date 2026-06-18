@@ -828,7 +828,13 @@ footer {
     flex: 1 1 100%;
     text-align: center;
   }
-
+.review-title {
+  text-align: center;
+  color: #b13cff;
+  font-size: clamp(3rem, 6vw, 5rem);
+  width: 100%;
+}
+``
   footer {
     text-align: center;
   }
