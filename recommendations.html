@@ -62,7 +62,8 @@
     <h1 style="color: #b13cff;">Anime Recommendations</h1>
 
     <!-- SEARCH -->
-    <input type="text" id="search" placeholder="Search anime..." onkeyup="filterAnime()">
+    <input type="text" id="search" placeholder="Search anime..." onkeyup="filterAnime()"
+      onkeydown="searchEnter(event)">
 
     <!-- RANDOM BUTTON -->
     <br>
@@ -164,5 +165,13 @@
     <a href="contact.html">Contact Us</a>
   </nav>
 </footer>
+      <script>
+function searchEnter(event) {
+  if (event.key === "Enter") {
+    let query = document.getElementById("search").value;
+    window.open("https://myanimelist.net/anime.php?q=" + query, "_blank");
+  }
+  }
+    </script>
 </body> 
 </html>
