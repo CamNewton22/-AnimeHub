@@ -10,7 +10,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: ##D2B48C;
-  color: white;
+  color: black;
   min-height: 100vh;
 }
 
@@ -21,8 +21,6 @@ img {
 
 .container {
   width: min(92%, 900px);
-  margin: 20px auto;
-  padding-bottom: 60px;
 }
 
 nav {
