@@ -71,7 +71,15 @@ nav {
   text-decoration: none;
   transition: 0.2s;
 }
-
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  font-size: 18px;
+  border-radius: 50%;
+}
 .review-link-btn:hover {
   background: #b13cff;
   transform: scale(1.05);
