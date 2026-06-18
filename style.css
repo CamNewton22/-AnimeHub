@@ -123,8 +123,7 @@ nav a.active {
 
 .anime-card {
   text-align: center;
-  width: min(220px, 45%);
-}
+ }
 
 .anime-card img {
   width: 100%;
@@ -143,8 +142,7 @@ nav a.active {
 
 .anime-card p {
   text-align: center;
-  font-size: 1.2rem;
-  margin-top: 18px;
+   margin-top: 12px;
 }
 
 
