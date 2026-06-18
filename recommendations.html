@@ -168,19 +168,37 @@
     <a href="contact.html">Contact Us</a>
   </nav>
 </footer>
-      <script>
-function searchEnter(event) {
-  if (event.key === "Enter") {
-    let query = document.getElementById("search").value;
-    window.open("https://myanimelist.net/anime.php?q=" + query, "_blank");
-  }
-  }
-        
-function searchAnime() {
-  let query = document.getElementById("search").value;
-  window.open("https://myanimelist.net/anime.php?q=" + query, "_blank");
-}
+      
+  <script>
+    function goToPage(page) {
+      window.location.href = page;
+    }
 
-    </script>
+    function filterAnime() {
+      let input = document.getElementById("search").value.toLowerCase();
+      let cards = document.querySelectorAll(".recommendation-card");
+
+      cards.forEach(card => {
+        let text = card.innerText.toLowerCase();
+        card.style.display = text.includes(input) ? "block" : "none";
+      });
+    }
+
+    function randomAnime() {
+      let anime = ["naruto.html", "onepiece.html", "demonslayer.html"];
+      let pick = anime[Math.floor(Math.random() * anime.length)];
+      window.location.href = pick;
+    }
+
+    function rate(num) {
+      document.getElementById("ratingResult").innerText =
+        "You rated this " + num + " stars!";
+    }
+
+    function addFavorite(name) {
+      document.getElementById("favorites").innerHTML += name + "<br>";
+    }
+  </script>
+
 </body> 
 </html>
