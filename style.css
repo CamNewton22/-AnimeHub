@@ -807,7 +807,13 @@ footer {
   .page {
     padding: 18px 14px 24px;
   }
-
+.home img {
+  width: 600px;
+  max-width: 95%;
+  margin: 20px auto;
+  display: block;
+}
+``
   .intro {
     font-size: 1rem;
     margin: 18px 12px;
