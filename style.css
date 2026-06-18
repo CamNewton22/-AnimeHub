@@ -221,7 +221,7 @@ a:hover {
   max-width: 1120px;
   margin: 30px auto;
   padding: 42px 38px 48px;
-  background: #1d1760;
+  background: transparent;
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 24px;
   box-shadow: 0 20px 60px rgba(0,0,0,0.22);
@@ -603,7 +603,7 @@ footer {
   text-align: left;
   padding: 18px 0 28px;
   color: #c8c8d4;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 @media (max-width: 900px) {
