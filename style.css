@@ -32,10 +32,17 @@ body {
   color: white;
   min-height: 100vh;
 }
+
 .review-card {
   display: flex;
-  justify-content: center;   /* ✅ centers horizontally */
+  justify-content: center;   /* ✅ perfect horizontal centering */
 }
+
+.review-image {
+  max-width: 90%;
+  height: auto;
+}
+
 img {
   max-width: 100%;
   display: block;
