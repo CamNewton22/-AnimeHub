@@ -112,7 +112,10 @@ nav h2 a {
   color: white;
   text-decoration: none;
 }
-
+.review-title {
+  color: #b13cff;
+  text-align: center;
+}
 nav a {
   color: white;
   font-size: 14px;
