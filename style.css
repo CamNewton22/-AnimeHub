@@ -41,7 +41,37 @@ nav {
   flex: 1 1 auto;
   gap: 16px;
 }
+.anime-info {
+  margin: 40px 0;
+  text-align: center;
+}
 
+.anime-info a {
+  color: #d453ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.anime-info a:hover {
+  text-decoration: underline;
+}
+
+/* Button style */
+.review-link-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: #d453ff;
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.review-link-btn:hover {
+  background: #b13cff;
+  transform: scale(1.05);
+}
 .nav-toggle {
   display: none;
   background: transparent;
