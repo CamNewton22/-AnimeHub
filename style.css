@@ -28,7 +28,10 @@ body {
   color: white;
   min-height: 100vh;
 }
-
+.review-card {
+  display: flex;
+  justify-content: center;   /* ✅ centers horizontally */
+}
 img {
   max-width: 100%;
   display: block;
