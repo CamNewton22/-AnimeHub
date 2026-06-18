@@ -5,7 +5,18 @@
 html {
   scroll-behavior: smooth;
 }
+.banner-row {
+  display: flex;
+  justify-content: center;   /* ✅ centers images horizontally */
+  gap: 20px;                 /* spacing between images */
+  flex-wrap: wrap;           /* keeps it responsive */
+}
 
+.banner {
+  width: 250px;              /* adjust size as needed */
+  height: auto;
+}
+``
 .random-btn {
   margin: 10px;
 }
