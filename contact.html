@@ -30,11 +30,16 @@
 
     <section class="contact-container">
       <form class="contact-form">
+        <form class="contact-form"
+      action="mailto:gilyarc@email.sc.edu" 
+      method="POST" 
+      enctype="text/plain" 
+      onsubmit="showMessage()">
+      ``
         <label>
-          First Name
-          <input type="text" firstname="name" placeholder="Your first name">
-          Last Name
-          <input type="text" lastname="name" placeholder="Your last name">
+          <input type="text" name="firstname" placeholder="Your first name" required>
+          <input type="text" name="lastname" placeholder="Your last name" required>
+          ``
         </label>
         <label>
           Email
