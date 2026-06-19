@@ -72,14 +72,6 @@ img {
   flex-wrap: wrap;
 }
 ``
-nav {
-  background-color: #1a102b;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 8px 12px;
-  flex-wrap: wrap;
-}
 .review-image {
   width: 80%;
   max-width: 700px;
@@ -901,4 +893,12 @@ footer {
   footer {
     text-align: center;
   }
+}
+nav {
+  background-color: #1a102b;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 8px 12px;
+  flex-wrap: wrap;
 }
