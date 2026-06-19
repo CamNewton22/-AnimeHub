@@ -67,7 +67,7 @@ img {
 }
 .anime-row {
   display: flex;
-  justify-content: center;   /* ✅ centers them across the page */
+  justify-content: center;   /* this centers pictures across the page */
   gap: 30px;
   flex-wrap: wrap;
 }
