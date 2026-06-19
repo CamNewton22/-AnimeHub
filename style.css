@@ -183,6 +183,14 @@ nav a {
   border-bottom: 2px solid transparent;
   transition: border-color 0.2s ease, color 0.2s ease;
 }
+nav {
+  background-color: #1a102b;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 8px 12px;
+  flex-wrap: wrap;
+}
 
 nav a:hover,
 nav a.active {
@@ -894,11 +902,4 @@ footer {
     text-align: center;
   }
 }
-nav {
-  background-color: #1a102b;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 8px 12px;
-  flex-wrap: wrap;
-}
+
