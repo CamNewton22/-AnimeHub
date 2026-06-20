@@ -16,12 +16,12 @@ html {
 
 .banner-row {
   display: flex;
-  justify-content: center;   /* ✅ centers images horizontally */
+  justify-content: center;   /* centers images horizontally */
   gap: 20px;                 /* spacing between images */
   flex-wrap: wrap;           /* keeps it responsive */
 }
 .review-image {
-  width: 500px;     /* ✅ increase size */
+  width: 500px;     /* increase size */
   max-width: 90%;   /* keeps it responsive */
   height: auto;
 }
