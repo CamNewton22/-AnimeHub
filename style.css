@@ -682,7 +682,12 @@ footer {
     width: 95%;
     margin: 16px auto;
   }
-
+.container {
+    max-width: 900px;   
+    margin: 0 auto;     
+    padding: 20px;      
+}
+``
   .intro {
     margin: 30px 20px;
     font-size: 1.1rem;
