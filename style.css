@@ -1,6 +1,9 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
+
+/* I USED ZYBOOKS, CHATGPT, GITHUB COPILOT, W3SCHOOLS TO HELP WITH THESE CODES --> */
+
 <img class="review-image" src="animereview.jpg" alt="review image">
 html {
   scroll-behavior: smooth;
@@ -16,13 +19,13 @@ html {
 
 .banner-row {
   display: flex;
-  justify-content: center;   /* centers images horizontally */
-  gap: 20px;                 /* spacing between images */
-  flex-wrap: wrap;           /* keeps it responsive */
+  justify-content: center;   
+  gap: 20px;                 
+  flex-wrap: wrap;           
 }
 .review-image {
-  width: 500px;     /* increase size */
-  max-width: 90%;   /* keeps it responsive */
+  width: 500px;    
+  max-width: 90%;   
   height: auto;
 }
 .banner {
@@ -44,7 +47,7 @@ body {
 
 .review-card {
   display: flex;
-  justify-content: center;   /* ✅ perfect horizontal centering */
+  justify-content: center;  
 }
 
 .review-image {
