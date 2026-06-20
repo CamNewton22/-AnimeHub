@@ -905,4 +905,19 @@ footer {
     text-align: center;
   }
 }
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
 
+nav li {
+    margin: 5px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
